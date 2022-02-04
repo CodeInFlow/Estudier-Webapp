@@ -1,0 +1,12 @@
+.Dept_Item{
+    flex: 1;
+    height: 10rem;
+    width: 10rem;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.Item_Content > img {
+width: 68px;
+height: 95.51px;
+}
