@@ -1,15 +1,14 @@
 import React from 'react';
-import "./DeptItem.css"
 
-function DeptItem({ dept_name, dept_img }) {
+function TrendingBooksItem({ book_author, book_img }) {
   return (
     <div className='py-4 px-8 rounded-lg bg-slate-50 w- hover:scale-105 hover:shadow-sm'>
-    <img className='w-10 h-10 m-auto' src={dept_img} alt="" />
+    <img className='w-24 h-fit m-auto' src={book_img} alt="" />
     <div className="mt-2 text-center">
-      {dept_name}
+      {book_author}
     </div>
   </div>
   )
 }
 
-export default DeptItem;
+export default TrendingBooksItem;

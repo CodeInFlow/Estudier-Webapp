@@ -7,7 +7,7 @@ import SidebarItem from './SidebarItem';
 
 function Sidebar() {
     return (
-        <div className='sidebar'>
+        <div className='sidebar flex-1'>
             <img className='sidebar-logo' src={Logo}/>
             <SidebarItem text="Books" Icon={BooksIcon}/>
             <SidebarItem text="Videos" Icon={VideoIcon}/>

@@ -1,14 +1,14 @@
-.Dept{
+.trending-books{
     display: flex;
     flex-direction: column;
 }
-.Dept_Header{
+.trending-books-header{
     display: flex;
     padding: 10px;
     align-items: center;
 }
 
-.Head_Right{
+.header-right{
     flex: 1;
     display: flex;
     justify-content: flex-end;
@@ -18,11 +18,11 @@
     font-size: small;
 
 }
-.Head_Right > p{
+.header-right > p{
     color: gray;
 }
 
-.Dept_Body{
+.trending-books-body{
     flex: 1;
     margin: 10px;
     padding: 8px;
