@@ -1,13 +1,13 @@
 import React from "react";
 import './App.css';
-import Department from "./Component/Home/Department/Department";
+import Home from "./Component/Home/Home";
 import Sidebar from './Component/Sidebar/Sidebar'
 
 function App() {
   return (
     <div className="app">
       <Sidebar />
-      <Department />
+      <Home />
     </div>
   );
 }

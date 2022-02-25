@@ -1,0 +1,15 @@
+.sidebar{
+    border-right: 1px solid var(--theme-background-color);
+    flex: 0.3;
+    max-width: 250px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--theme-color);
+}
+
+.sidebar-logo{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 120px;
+}
