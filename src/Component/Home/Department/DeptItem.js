@@ -1,5 +1,4 @@
 import React from 'react';
-import "./DeptItem.css"
 
 function DeptItem({ dept_name, dept_img }) {
   return (

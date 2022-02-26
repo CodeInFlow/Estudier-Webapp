@@ -3,14 +3,15 @@ import { useParams } from 'react-router-dom';
 import db from '../../../Firebase';
 import {Link} from 'react-router-dom';
 
-function Subjects() {
-  let { id } = useParams();
-  const [subjects, setsubjects] = useState([]);
+function ParticularSubject() {
+  
+  let { id, id2 } = useParams();
+  const [notes, setnotes] = useState([]);
   let DeptName;
 
   useEffect(() => {
-    db.collection(id).onSnapshot(snapshot => (
-      setsubjects(snapshot.docs.map(doc => doc.data()))
+    db.collection(id2).onSnapshot(snapshot => (
+      setnotes(snapshot.docs.map(doc => doc.data()))
     ))
   }, []);
 
@@ -28,8 +29,8 @@ function Subjects() {
       <div className='text-2xl text-gray-600 font-semibold'>{DeptName}</div>
       <div className='p-10'>
         {
-          subjects.map(subject => (
-            <Link to={`${id}/${subject.sub_link}`}><div className='text-xl p-3'>{subject.sub_name}</div><hr className='bg-gray-400' /></Link>
+          notes.map(note => (
+            <Link to={note.notes_link}><div className='text-xl p-3'>{note.notes_name}</div><hr className='bg-gray-400' /></Link>
           ))
         }
       </div>
@@ -37,4 +38,4 @@ function Subjects() {
   )
 }
 
-export default Subjects
+export default ParticularSubject;

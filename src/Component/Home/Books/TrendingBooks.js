@@ -23,7 +23,7 @@ function TrendingBooks() {
     <div className="trending-books-body flex space-x-10">
      {
         Trendingbooks.map(book => (
-          <TrendingBooksItem book_author={book.book_author} book_img={book.book_img} />
+          <TrendingBooksItem key={book.book_img} book_author={book.book_author} book_img={book.book_img} />
         ))
       }
     </div>

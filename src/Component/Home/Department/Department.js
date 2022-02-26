@@ -20,12 +20,12 @@ function Department() {
     <div className="Dept_Body flex space-x-10">
       {/* <Link to=""><DeptItem dept_name="Computer" dept_img={CompImage} /></Link>
       <Link to=""><DeptItem dept_name="Infromation Technology" dept_img={ITImage} /></Link> */}
-      <Link to="dept/comp"><DeptItem dept_name="CS" dept_img={CompImage} /></Link>
-      <DeptItem dept_name="IT" dept_img={ITImage} />
-      <DeptItem dept_name="ENTC" dept_img={ENTCImage} />
-      <DeptItem dept_name="EE" dept_img={EEImage} />
-      <DeptItem dept_name="ME" dept_img={MEImage} />
-      <DeptItem dept_name="CSBS" dept_img={CSBSImage} />
+      <Link to="dept/cs"><DeptItem dept_name="CS" dept_img={CompImage} /></Link>
+      <Link to="dept/it"><DeptItem dept_name="IT" dept_img={ITImage} /></Link>
+      <Link to="dept/entc"><DeptItem dept_name="ENTC" dept_img={ENTCImage} /></Link>
+      <Link to="dept/ee"><DeptItem dept_name="EE" dept_img={EEImage} /></Link>
+      <Link to="dept/me"><DeptItem dept_name="ME" dept_img={MEImage} /></Link>
+      <Link to="dept/csbs"><DeptItem dept_name="CSBS" dept_img={CSBSImage} /></Link>
     </div>
 
   </div>
