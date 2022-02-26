@@ -7,7 +7,7 @@ function ParticularSubject() {
   
   let { id, id2 } = useParams();
   const [notes, setnotes] = useState([]);
-  let DeptName;
+  let DeptName, link;
 
   useEffect(() => {
     db.collection(id2).onSnapshot(snapshot => (
@@ -30,7 +30,10 @@ function ParticularSubject() {
       <div className='p-10'>
         {
           notes.map(note => (
-            <Link to={note.notes_link}><div className='text-xl p-3'>{note.notes_name}</div><hr className='bg-gray-400' /></Link>
+            link = note.notes_link,
+            link = link.split("o/"),
+            link = link[1].split(".p"),
+            <Link to={`${id2}/123`}><div className='text-xl p-3'>{note.notes_name}</div><hr className='bg-gray-400' /></Link>
           ))
         }
       </div>

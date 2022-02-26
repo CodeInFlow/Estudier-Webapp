@@ -4,6 +4,7 @@ import TrendingBooks from './Books/TrendingBooks';
 import Subjects from './Department/Subjects';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ParticularSubject from './Department/ParticularSubject';
+import PdfReader from './PdfReader';
 
 function Home() {
   return <div className='home p-6 flex-1'>
@@ -18,6 +19,9 @@ function Home() {
         </Route>
         <Route exact path='/dept/:id/:id2'>
           <ParticularSubject />
+        </Route>
+        <Route exact path='/dept/:id/:id2/:id3'>
+          <PdfReader />
         </Route>
       </Switch>
     </Router>
